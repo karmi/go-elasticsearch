@@ -10,7 +10,7 @@ import (
 
 	"github.com/karmi/go-elasticsearch/esapi"
 	"github.com/karmi/go-elasticsearch/estransport"
-	"github.com/karmi/go-elasticsearch/internal/version"
+	"github.com/karmi/go-elasticsearch/version"
 )
 
 const (
