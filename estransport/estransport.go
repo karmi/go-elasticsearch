@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/karmi/go-elasticsearch/internal/version"
+	"github.com/karmi/go-elasticsearch/version"
 )
 
 // Version returns the package version as a string.
