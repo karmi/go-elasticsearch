@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/elastic/go-elasticsearch"
-	"github.com/elastic/go-elasticsearch/estransport"
+	"github.com/karmi/go-elasticsearch"
+	"github.com/karmi/go-elasticsearch/estransport"
 )
 
 func init() {

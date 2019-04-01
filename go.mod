@@ -1,3 +1,3 @@
-module github.com/elastic/go-elasticsearch
+module github.com/karmi/go-elasticsearch
 
 go 1.11

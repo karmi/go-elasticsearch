@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/elastic/go-elasticsearch"
+	"github.com/karmi/go-elasticsearch"
 )
 
 func TestAPI(t *testing.T) {

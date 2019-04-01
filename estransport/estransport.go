@@ -1,4 +1,4 @@
-package estransport // import "github.com/elastic/go-elasticsearch/estransport"
+package estransport // import "github.com/karmi/go-elasticsearch/estransport"
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/elastic/go-elasticsearch/internal/version"
+	"github.com/karmi/go-elasticsearch/internal/version"
 )
 
 // Version returns the package version as a string.

@@ -11,9 +11,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/elastic/go-elasticsearch"
+	"github.com/karmi/go-elasticsearch"
 
-	"github.com/elastic/go-elasticsearch/_examples/xkcdsearch"
+	"github.com/karmi/go-elasticsearch/_examples/xkcdsearch"
 )
 
 var (
