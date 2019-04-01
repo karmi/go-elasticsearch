@@ -20,7 +20,7 @@ test-integ:  ## Run integration tests
 ifdef race
 	$(eval testintegargs += "-race")
 endif
-	$(eval testintegargs += "-cover" "-coverprofile=tmp/integration-client.cov" "-tags='integration'" "-timeout=1h" "github.com/elastic/go-elasticsearch" "github.com/elastic/go-elasticsearch/estransport")
+	$(eval testintegargs += "-cover" "-coverprofile=tmp/integration-client.cov" "-tags='integration'" "-timeout=1h" "github.com/karmi/go-elasticsearch" "github.com/karmi/go-elasticsearch/estransport")
 	@mkdir -p tmp
 	@if which gotestsum > /dev/null 2>&1 ; then \
 		echo "gotestsum --format=short-verbose --junitfile=tmp/integration-report.xml --" $(testintegargs); \
@@ -35,7 +35,7 @@ test-api:  ## Run generated API integration tests
 ifdef race
 	$(eval testapiargs += "-race")
 endif
-	$(eval testapiargs += "-cover" "-coverpkg=github.com/elastic/go-elasticsearch/esapi" "-coverprofile=$(PWD)/tmp/integration-api.cov" "-tags='integration'" "-timeout=1h" "./...")
+	$(eval testapiargs += "-cover" "-coverpkg=github.com/karmi/go-elasticsearch/esapi" "-coverprofile=$(PWD)/tmp/integration-api.cov" "-tags='integration'" "-timeout=1h" "./...")
 	@mkdir -p tmp
 	@if which gotestsum > /dev/null 2>&1 ; then \
 		echo "cd esapi/test && gotestsum --format=short-verbose --junitfile=$(PWD)/tmp/integration-api-report.xml --" $(testapiargs); \
@@ -90,8 +90,8 @@ test-coverage:  ## Generate test coverage report
 ##@ Development
 lint:  ## Run lint on the package
 	@echo "\033[2m→ Running lint...\033[0m"
-	go vet github.com/elastic/go-elasticsearch/...
-	go list github.com/elastic/go-elasticsearch/... | 'grep' -v internal | xargs golint -set_exit_status
+	go vet github.com/karmi/go-elasticsearch/...
+	go list github.com/karmi/go-elasticsearch/... | 'grep' -v internal | xargs golint -set_exit_status
 
 apidiff: ## Display API incompabilities
 	@if ! command -v apidiff > /dev/null; then \
@@ -120,11 +120,11 @@ apidiff: ## Display API incompabilities
 
 godoc: ## Display documentation for the package
 	@echo "\033[2m→ Generating documentation...\033[0m"
-	@echo "open http://localhost:6060/pkg/github.com/elastic/go-elasticsearch/\n"
+	@echo "open http://localhost:6060/pkg/github.com/karmi/go-elasticsearch/\n"
 	mkdir -p /tmp/tmpgoroot/doc
-	rm -rf /tmp/tmpgopath/src/github.com/elastic/go-elasticsearch
-	mkdir -p /tmp/tmpgopath/src/github.com/elastic/go-elasticsearch
-	tar -c --exclude='.git' --exclude='tmp' . | tar -x -C /tmp/tmpgopath/src/github.com/elastic/go-elasticsearch
+	rm -rf /tmp/tmpgopath/src/github.com/karmi/go-elasticsearch
+	mkdir -p /tmp/tmpgopath/src/github.com/karmi/go-elasticsearch
+	tar -c --exclude='.git' --exclude='tmp' . | tar -x -C /tmp/tmpgopath/src/github.com/karmi/go-elasticsearch
 	GOROOT=/tmp/tmpgoroot/ GOPATH=/tmp/tmpgopath/ godoc -http=localhost:6060 -play
 
 cluster: ## Launch an Elasticsearch cluster with Docker
