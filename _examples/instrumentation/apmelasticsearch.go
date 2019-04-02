@@ -18,7 +18,7 @@ import (
 	"github.com/fatih/color"
 	"golang.org/x/crypto/ssh/terminal"
 
-	"github.com/karmi/go-elasticsearch"
+	"github.com/karmi/go-elasticsearch/v7"
 
 	"go.elastic.co/apm"
 	"go.elastic.co/apm/module/apmelasticsearch"

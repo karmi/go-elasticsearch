@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/karmi/go-elasticsearch"
-	"github.com/karmi/go-elasticsearch/esapi"
+	"github.com/karmi/go-elasticsearch/v7"
+	"github.com/karmi/go-elasticsearch/v7/esapi"
 )
 
 // TODO(karmi): Refactor into a shared mock/testing package

@@ -48,7 +48,7 @@ cat > main.go <<-END
   import (
     "log"
 
-    "github.com/karmi/go-elasticsearch"
+    "github.com/karmi/go-elasticsearch/v7"
   )
 
   func main() {
@@ -144,8 +144,8 @@ import (
   "strings"
   "sync"
 
-  "github.com/karmi/go-elasticsearch"
-  "github.com/karmi/go-elasticsearch/esapi"
+  "github.com/karmi/go-elasticsearch/v7"
+  "github.com/karmi/go-elasticsearch/v7/esapi"
 )
 
 func main() {

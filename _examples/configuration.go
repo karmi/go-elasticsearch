@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/karmi/go-elasticsearch"
+	"github.com/karmi/go-elasticsearch/v7"
 )
 
 func main() {

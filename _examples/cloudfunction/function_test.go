@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/karmi/go-elasticsearch"
+	"github.com/karmi/go-elasticsearch/v7"
 
-	"github.com/karmi/go-elasticsearch/_examples/clusterstatus"
+	"github.com/karmi/go-elasticsearch/v7/_examples/clusterstatus"
 )
 
 // Mock transport replaces the HTTP transport for tests

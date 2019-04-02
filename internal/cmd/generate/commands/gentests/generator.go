@@ -183,8 +183,8 @@ import (
 	encyaml "gopkg.in/yaml.v2"
 	"testing"
 
-	"github.com/karmi/go-elasticsearch"
-	"github.com/karmi/go-elasticsearch/esapi"
+	"github.com/karmi/go-elasticsearch/v7"
+	"github.com/karmi/go-elasticsearch/v7/esapi"
 )
 
 var (

@@ -1,4 +1,4 @@
-package xkcdsearch // import "github.com/karmi/go-elasticsearch/_examples/xkcdsearch"
+package xkcdsearch // import "github.com/karmi/go-elasticsearch/v7/_examples/xkcdsearch"
 
 import (
 	"strings"
