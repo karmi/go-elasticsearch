@@ -9,7 +9,7 @@ import (
 
 	"golang.org/x/tools/imports"
 
-	"github.com/elastic/go-elasticsearch/internal/cmd/generate/utils"
+	"github.com/karmi/go-elasticsearch/internal/cmd/generate/utils"
 )
 
 // Generator represents the "gensource" generator.

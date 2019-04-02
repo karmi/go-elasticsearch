@@ -2,9 +2,9 @@
 
 The official Go client for [Elasticsearch](https://www.elastic.co/products/elasticsearch).
 
-[![GoDoc](https://godoc.org/github.com/elastic/go-elasticsearch?status.svg)](http://godoc.org/github.com/elastic/go-elasticsearch)
+[![GoDoc](https://godoc.org/github.com/karmi/go-elasticsearch?status.svg)](http://godoc.org/github.com/karmi/go-elasticsearch)
 [![Travis-CI](https://travis-ci.org/elastic/go-elasticsearch.svg?branch=master)](https://travis-ci.org/elastic/go-elasticsearch)
-[![Go Report Card](https://goreportcard.com/badge/github.com/elastic/go-elasticsearch)](https://goreportcard.com/report/github.com/elastic/go-elasticsearch)
+[![Go Report Card](https://goreportcard.com/badge/github.com/karmi/go-elasticsearch)](https://goreportcard.com/report/github.com/karmi/go-elasticsearch)
 [![codecov.io](https://codecov.io/github/elastic/go-elasticsearch/coverage.svg?branch=master)](https://codecov.io/gh/elastic/go-elasticsearch?branch=master)
 
 ## Caveats
@@ -13,7 +13,8 @@ We encourage you to try the package in your projects, just keep these caveats in
 
 * **This is a work in progress.** Not all the planned features, standard in official Elasticsearch clients — retries on failures, auto-discovering nodes, ... — are implemented yet.
 * **There are no guarantees on API stability.** Though the public APIs have been designed very carefully, they can change in a backwards-incompatible way depending on further exploration and user feedback.
-* **The client targets Elasticsearch 7.x.** Support for 6.x and 5.x APIs will be added later.
+
+* **The `master` branch targets Elasticsearch 7.x.** The [6.x](https://github.com/karmi/go-elasticsearch/tree/6.x) and [5.x](https://github.com/karmi/go-elasticsearch/tree/5.x) branches are compatible with the respective major versions of Elasticsearch; proper compatibility matrix and release tags will be added soon.
 
 <!-- ----------------------------------------------------------------------------------------------- -->
 
@@ -21,15 +22,21 @@ We encourage you to try the package in your projects, just keep these caveats in
 
 Install the package with `go get`:
 
-    go get -u github.com/elastic/go-elasticsearch
+    go get -u github.com/karmi/go-elasticsearch
 
 Or, add the package to your `go.mod` file:
 
+<<<<<<< HEAD
     require github.com/elastic/go-elasticsearch 6.x
+||||||| parent of a7bd528... mod: Rename module to github.com/karmi/go-elasticsearch
+    require github.com/elastic/go-elasticsearch master
+=======
+    require github.com/karmi/go-elasticsearch master
+>>>>>>> a7bd528... mod: Rename module to github.com/karmi/go-elasticsearch
 
 Or, clone the repository:
 
-    git clone https://github.com/elastic/go-elasticsearch.git && cd go-elasticsearch
+    git clone https://github.com/karmi/go-elasticsearch.git && cd go-elasticsearch
 
 A complete example:
 
@@ -39,7 +46,13 @@ mkdir my-elasticsearch-app && cd my-elasticsearch-app
 cat > go.mod <<-END
   module my-elasticsearch-app
 
+<<<<<<< HEAD
   require github.com/elastic/go-elasticsearch 6.x
+||||||| parent of a7bd528... mod: Rename module to github.com/karmi/go-elasticsearch
+  require github.com/elastic/go-elasticsearch master
+=======
+  require github.com/karmi/go-elasticsearch master
+>>>>>>> a7bd528... mod: Rename module to github.com/karmi/go-elasticsearch
 END
 
 cat > main.go <<-END
@@ -48,7 +61,7 @@ cat > main.go <<-END
   import (
     "log"
 
-    "github.com/elastic/go-elasticsearch"
+    "github.com/karmi/go-elasticsearch"
   )
 
   func main() {
@@ -144,8 +157,8 @@ import (
   "strings"
   "sync"
 
-  "github.com/elastic/go-elasticsearch"
-  "github.com/elastic/go-elasticsearch/esapi"
+  "github.com/karmi/go-elasticsearch"
+  "github.com/karmi/go-elasticsearch/esapi"
 )
 
 func main() {
@@ -285,7 +298,7 @@ func main() {
 ```
 
 As you see in the example above, the `esapi` package allows to call the Elasticsearch APIs in two distinct ways: either by creating a struct, such as `IndexRequest`, and calling its `Do()` method by passing it a context and the client, or by calling the `Search()` function on the client directly, using the option functions such as `WithIndex()`. See more information and examples in the
-[package documentation](https://godoc.org/github.com/elastic/go-elasticsearch/esapi).
+[package documentation](https://godoc.org/github.com/karmi/go-elasticsearch/esapi).
 
 The `estransport` package handles the transfer of data to and from Elasticsearch. At the moment, the implementation is really minimal: it only round-robins across the configured cluster endpoints. In future, more features — retrying failed requests, ignoring certain status codes, auto-discovering nodes in the cluster, and so on — will be added.
 
