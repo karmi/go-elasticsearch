@@ -3,7 +3,7 @@ package esapi_test
 import (
 	"log"
 
-	"github.com/karmi/go-elasticsearch"
+	"github.com/karmi/go-elasticsearch/v8"
 )
 
 func ExampleResponse_IsError() {

@@ -3,8 +3,8 @@ package fasthttp_test
 import (
 	"testing"
 
-	"github.com/karmi/go-elasticsearch"
-	"github.com/karmi/go-elasticsearch/_examples/fasthttp"
+	"github.com/karmi/go-elasticsearch/v8"
+	"github.com/karmi/go-elasticsearch/v8/_examples/fasthttp"
 )
 
 func BenchmarkHTTPClient(b *testing.B) {

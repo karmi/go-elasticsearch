@@ -1,11 +1,11 @@
-package esapi // import "github.com/karmi/go-elasticsearch/esapi"
+package esapi // import "github.com/karmi/go-elasticsearch/v8/esapi"
 
 import (
 	"net/http"
 	"strconv"
 	"time"
 
-	"github.com/karmi/go-elasticsearch/internal/version"
+	"github.com/karmi/go-elasticsearch/v8/internal/version"
 )
 
 // Version returns the package version as a string.

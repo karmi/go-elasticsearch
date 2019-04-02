@@ -16,9 +16,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karmi/go-elasticsearch"
-	"github.com/karmi/go-elasticsearch/esapi"
-	"github.com/karmi/go-elasticsearch/estransport"
+	"github.com/karmi/go-elasticsearch/v8"
+	"github.com/karmi/go-elasticsearch/v8/esapi"
+	"github.com/karmi/go-elasticsearch/v8/estransport"
 )
 
 func TestClientTransport(t *testing.T) {

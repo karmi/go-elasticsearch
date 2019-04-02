@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/karmi/go-elasticsearch/internal/cmd/generate/utils"
+	"github.com/karmi/go-elasticsearch/v8/internal/cmd/generate/utils"
 )
 
 var rootCmd = &cobra.Command{

@@ -14,7 +14,7 @@ import (
 	"github.com/fatih/color"
 	"golang.org/x/crypto/ssh/terminal"
 
-	"github.com/karmi/go-elasticsearch"
+	"github.com/karmi/go-elasticsearch/v8"
 
 	"go.opencensus.io/plugin/ochttp"
 	"go.opencensus.io/stats/view"

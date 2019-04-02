@@ -15,8 +15,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/karmi/go-elasticsearch"
-	"github.com/karmi/go-elasticsearch/esapi"
+	"github.com/karmi/go-elasticsearch/v8"
+	"github.com/karmi/go-elasticsearch/v8/esapi"
 )
 
 func main() {

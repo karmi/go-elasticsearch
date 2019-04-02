@@ -20,7 +20,7 @@ test-integ:  ## Run integration tests
 ifdef race
 	$(eval testintegargs += "-race")
 endif
-	$(eval testintegargs += "-cover" "-coverprofile=tmp/integration-client.cov" "-tags='integration'" "-timeout=1h" "github.com/karmi/go-elasticsearch" "github.com/karmi/go-elasticsearch/estransport")
+	$(eval testintegargs += "-cover" "-coverprofile=tmp/integration-client.cov" "-tags='integration'" "-timeout=1h" "github.com/karmi/go-elasticsearch/v8" "github.com/karmi/go-elasticsearch/v8/estransport")
 	@mkdir -p tmp
 	@if which gotestsum > /dev/null 2>&1 ; then \
 		echo "gotestsum --format=short-verbose --junitfile=tmp/integration-report.xml --" $(testintegargs); \
