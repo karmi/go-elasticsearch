@@ -9,7 +9,7 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/elastic/go-elasticsearch/internal/cmd/generate/utils"
+	"github.com/karmi/go-elasticsearch/internal/cmd/generate/utils"
 )
 
 var (

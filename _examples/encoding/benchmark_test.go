@@ -10,7 +10,7 @@ import (
 	"github.com/mailru/easyjson"
 	"github.com/tidwall/gjson"
 
-	"github.com/elastic/go-elasticsearch/_examples/encoding/model"
+	"github.com/karmi/go-elasticsearch/_examples/encoding/model"
 )
 
 func BenchmarkSearchResults(b *testing.B) {
