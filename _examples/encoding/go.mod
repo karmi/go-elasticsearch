@@ -1,11 +1,11 @@
-module github.com/elastic/go-elasticsearch/_examples/encoding
+module github.com/karmi/go-elasticsearch/_examples/encoding
 
 go 1.11
 
-replace github.com/elastic/go-elasticsearch => ../..
+replace github.com/karmi/go-elasticsearch => ../..
 
 require (
-	github.com/elastic/go-elasticsearch v0.0.1-0.20190316081522-60ea51fd3784
+	github.com/karmi/go-elasticsearch v0.0.1-0.20190316081522-60ea51fd3784
 
 	github.com/fatih/color v1.7.0
 

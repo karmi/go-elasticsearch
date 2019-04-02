@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/elastic/go-elasticsearch/estransport"
+	"github.com/karmi/go-elasticsearch/estransport"
 )
 
 var (
