@@ -26,8 +26,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/karmi/go-elasticsearch"
-	"github.com/karmi/go-elasticsearch/esapi"
+	"github.com/karmi/go-elasticsearch/v6"
+	"github.com/karmi/go-elasticsearch/v6/esapi"
 )
 
 type Article struct {

@@ -10,11 +10,11 @@ import (
 	"time"
 
 	"github.com/fatih/color"
-	"github.com/karmi/go-elasticsearch"
-	"github.com/karmi/go-elasticsearch/esapi"
+	"github.com/karmi/go-elasticsearch/v6"
+	"github.com/karmi/go-elasticsearch/v6/esapi"
 	"github.com/mailru/easyjson"
 
-	"github.com/karmi/go-elasticsearch/_examples/encoding/model"
+	"github.com/karmi/go-elasticsearch/v6/_examples/encoding/model"
 )
 
 var (

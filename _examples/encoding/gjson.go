@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
-	"github.com/karmi/go-elasticsearch"
+	"github.com/karmi/go-elasticsearch/v6"
 	"github.com/tidwall/gjson"
 )
 

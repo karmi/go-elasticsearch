@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/karmi/go-elasticsearch/estransport"
+	"github.com/karmi/go-elasticsearch/v6/estransport"
 )
 
 func TestClientConfiguration(t *testing.T) {
